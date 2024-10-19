@@ -1,0 +1,138 @@
+/* обнуляем все стили для отступов*/
+* {
+    margin: 0;
+    padding: 0;
+}
+    /* импортируем шрифты, их всего 3:
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    Пока один ввожу в CSS*/
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*задаем основной шрифт для всего документа - Montserrat*/
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/*стилизуем Header + nav*/
+
+    nav ul{
+        padding-top: 16px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content:end;
+        
+        padding-right: 65px;
+        background-color: black;
+        list-style-type: none;
+    }
+    nav ul li :hover{
+        background-color: white; color: black;
+    }
+    nav ul li a{
+        text-decoration: none;
+        border-radius: 20%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 65px;
+        color: white;
+
+    }
+
+    /* стилизуем Section-1*/
+        .first-section{
+            padding-top: 86px;
+            display: flex;
+            justify-content: space-around;    
+        }
+
+            .first-section .Tomasz-element{
+            padding-top: 72px;
+            padding-left: 272px;
+            padding-bottom: 251px;
+            width: 50%;
+            background: linear-gradient(to bottom right, rgb(216, 219, 219) 50%, black 50%);
+            }
+            
+           /* .first-section .Tomasz-element .button{
+            height: 350px;
+                
+            }*/
+
+
+            .first-section .navigate{
+               padding-top: 65px;
+                width: 50%;
+                background-color: black;
+            }
+            .first-section .navigate ul{
+            list-style-type: none;
+            padding-right: 20%;
+            display: flex;
+            justify-content: space-between;
+            }
+            .first-section .navigate ul li :hover{
+                background-color: white; color: black;}
+                        
+            .first-section .navigate ul li a{
+                
+                text-decoration: none;
+                border-radius: 20%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: white;
+            }
+
+        .first-section .navigate p{
+            padding-left: 331px;
+            width: 136px;
+            color: white;
+
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        /*секция Портфолио*/
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0px;
+          }
+          .portfolio-item {
+            height: 400px;
+            width: 640px;
+            background-color: #f0f0f0;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            border: 1px solid  #ccc;
+          }
+          
+          .filters { 
+            
+            text-align: center;
+            margin-bottom: 20px;
+
+          }
+          .filters-button {
+            width: 149 px;
+            height: 48 px;
+            margin-right: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+          }
+          
+         
